@@ -1,0 +1,27 @@
+class project
+    {
+        public String name;
+        public int numOfTasks;
+        private List<employee> employees = new List<employee>();
+        private List<task> tasks = new List<task>();
+
+       public void setTasks(List<task> tasks)
+        {
+            this.tasks = tasks;
+        }
+
+        public List<task> getTasks() 
+        {
+            return tasks;
+        }
+       public void setEmployees(List<employee> employees) 
+        {
+            this.employees = employees;
+        }
+
+        public List<employee> getEmployees() 
+        {
+            return employees;
+        }
+
+        }
