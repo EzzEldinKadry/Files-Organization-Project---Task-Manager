@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Task
+    {
+        private string taskContent;
+        private Employee employee;
+        List <string>comments;
+        public Task()
+        {
+            taskContent = "";
+            employee = null;
+            comments = new List<string>();
+        }
+        public Task(string taskContent,Employee employee)
+        {
+            this.taskContent = taskContent;
+            this.employee = employee;
+        }
+        public string TaskContent
+        {
+            get 
+            { 
+                return taskContent; 
+            }
+            set 
+            { 
+                taskContent = value; 
+            }
+        }
+        public Employee getEmployee()
+        {
+            return this.employee;
+        }
+        public void changeEmployee(Employee emp)
+        {
+            this.employee = emp;
+        }
+        public void addComment(string comment)
+        {
+            this.comments.Add(comment);
+        }
+        public List <string> getAllComments()
+        {
+            return this.comments;
+        }
+
+    }
+}
